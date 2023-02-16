@@ -1,6 +1,10 @@
 #include <stdio.h>
-
-int main(void) /* Prints a string using puts() */
+/**
+* main - This is the entry point of the program
+*
+* Return: 0 (Success)
+*/
+int main(void)
 {
 	char hello[] = "\"Programming is like building a multilingual puzzle";
 

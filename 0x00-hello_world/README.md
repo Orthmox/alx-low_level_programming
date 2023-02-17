@@ -6,3 +6,4 @@ This is my fist directory for the C programming language in ALX
 
 2-assembler script generates the assembly code of a C file and saves the output in a file
 3-name script compiles a C file and creates an executable file named cisfun.
+4-puts.c script prints a string using puts()

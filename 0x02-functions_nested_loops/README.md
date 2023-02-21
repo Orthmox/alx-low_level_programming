@@ -3,3 +3,5 @@ Created a header file main.h and included prototype of the function _putchar()
 0-putchar.c prints characters '_putchar'  using the function _putchar
 print_alphabet function prints alphabets in lowercase
 1-alphabet.c file prints alphabets on lowercase using print_alphabet function
+print_alphabet_x10 function prints alphabets in lowercase 10 times
+2-print_alphabet_x10.c file prints alphabets in lowercase 10 times using print_alphabet_x10 function

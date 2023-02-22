@@ -9,3 +9,5 @@ Function _islower checks if a character is lowercase, returns 1 if true and 0 if
 3-islower.c file checks if a given character is lowercase using _islower function
 Function _isalpha checks if a character is an alphabet, lowercase or uppercase
 4-isalpha.c file checks if a given character is an alphabet
+Function print_sign prints the sign of a number i.e +, 0, -1
+5-sign.c prints the sign of a number using the print_sign function

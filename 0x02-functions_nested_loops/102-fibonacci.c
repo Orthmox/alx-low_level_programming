@@ -9,18 +9,16 @@ int main(void)
 {
 	long int num1, num2, next, i;
 
-	num1 = 1;
-	num2 = 2;
-	next = num1 + num2;
-	i = 3;
-
-	printf("%lu, ", num1);
-	printf("%lu, ", num2);
+	num1 = 0;
+	num2 = 1;
+	i = 1;
 
 	while (i <= 50)
 	{
+		next = num1 + num2;
+
 		if (i == 50)
-		{ 
+		{
 			printf("%lu \n", next);
 		}
 		else

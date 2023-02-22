@@ -13,23 +13,21 @@ int main(void)
 	num2 = 1;
 	i = 1;
 
-	while (i <= 50)
+	for (i >= 1; i <= 59; i++)
 	{
 		next = num1 + num2;
-
-		if (i == 50)
-		{
-			printf("%lu \n", next);
-		}
-		else
+		if (i < 50)
 		{
 			printf("%lu, ", next);
 		}
-
+		else if (i == 50)
+		{
+			printf("%lu\n", next);
+		}
 		num1 = num2;
 		num2 = next;
 		next = num1 + num2;
-		i++;
 	}
 	return (0);
+
 }

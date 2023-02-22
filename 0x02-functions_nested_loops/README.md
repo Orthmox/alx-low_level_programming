@@ -11,3 +11,5 @@ Function _isalpha checks if a character is an alphabet, lowercase or uppercase
 4-isalpha.c file checks if a given character is an alphabet
 Function print_sign prints the sign of a number i.e +, 0, -1
 5-sign.c prints the sign of a number using the print_sign function
+Function _abs computes absolute value of an integer
+6-abs.c file computes the absolute value of an interger using _abs function

@@ -21,3 +21,5 @@ Function times_table prints the 9 times table
 9-times_table.c file prints the 9 times table using times_table function
 Function add adds two integers
 10-add.c adds two integers using add function
+Function print_to_98 prints natural numbers from n to 98
+11-print_to_98.c prints natural numbers from n to 98 using the print_to_98 fumction

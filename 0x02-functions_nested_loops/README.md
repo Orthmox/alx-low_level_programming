@@ -23,3 +23,4 @@ Function add adds two integers
 10-add.c adds two integers using add function
 Function print_to_98 prints natural numbers from n to 98
 11-print_to_98.c prints natural numbers from n to 98 using the print_to_98 fumction
+101-natural.c computes the sum of the multiples of 3 or 5 below 1024

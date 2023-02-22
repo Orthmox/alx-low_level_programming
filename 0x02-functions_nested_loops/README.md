@@ -13,3 +13,5 @@ Function print_sign prints the sign of a number i.e +, 0, -1
 5-sign.c prints the sign of a number using the print_sign function
 Function _abs computes absolute value of an integer
 6-abs.c file computes the absolute value of an interger using _abs function
+Function print_last_digit prints the last digit of a number
+7-print_last_digit.c file prints tge last digit of a number using the print_last_digit function

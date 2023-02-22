@@ -15,3 +15,5 @@ Function _abs computes absolute value of an integer
 6-abs.c file computes the absolute value of an interger using _abs function
 Function print_last_digit prints the last digit of a number
 7-print_last_digit.c file prints tge last digit of a number using the print_last_digit function
+Function jack_bauer prints every minute in 24 hours
+8-24_hours.c prints every minute in 24 hours using jack_bauer function

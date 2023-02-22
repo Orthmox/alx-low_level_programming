@@ -24,3 +24,4 @@ Function add adds two integers
 Function print_to_98 prints natural numbers from n to 98
 11-print_to_98.c prints natural numbers from n to 98 using the print_to_98 fumction
 101-natural.c computes the sum of the multiples of 3 or 5 below 1024
+102-fibonacci.c file prints the first 50 numbers of the Fibonacci sequence

@@ -9,6 +9,8 @@ int print_last_digit(int n)
 	int lgit;
 
 	lgit = n % 10;
+	if (lgit < 0)
+		lgit = -lgit;
 	_putchar(lgit + '0');
-	return (0);
+	return (lgit);
 }

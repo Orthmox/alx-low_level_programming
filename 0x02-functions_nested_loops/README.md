@@ -19,3 +19,5 @@ Function jack_bauer prints every minute in 24 hours
 8-24_hours.c prints every minute in 24 hours using jack_bauer function
 Function times_table prints the 9 times table
 9-times_table.c file prints the 9 times table using times_table function
+Function add adds two integers
+10-add.c adds two integers using add function

@@ -13,7 +13,7 @@ int main(void)
 	num2 = 1;
 	i = 1;
 
-	for (i = 1; i <= 99; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		next = num1 + num2;
 		if (i < 98)

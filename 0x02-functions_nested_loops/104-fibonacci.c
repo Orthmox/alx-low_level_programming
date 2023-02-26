@@ -24,7 +24,8 @@ int main(void)
 	k2 = k % 1000000000;
 	for (i = 92; i < 99; ++i)
 	{
-		printf(", %lu%lu", k1, k2);
+		printf(", %lu%lu", k1);
+		printf("%lu", k2);
 		k1 = k1 + j1;
 		j1 = k1 - j1;
 		k2 = k2 + j2;

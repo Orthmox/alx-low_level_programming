@@ -2,32 +2,34 @@
 /**
  * main - Entry point
  *
- * Print the first 50 numbers in the Fibonacci sequence starting with 1 and 2
+ * Print the first 98 numbers in the Fibonacci sequence starting with 1 and 2
  * Return: Success(0)
  */
 int main(void)
 {
-	long int num1, num2, next, i;
+	unsigned long int i, j, k, j1, j2, k1, k2;
 
-	num1 = 0;
-	num2 = 1;
-	i = 1;
-
-	for (i = 1; i <= 98; i++)
+	j = 1;
+	k = 2;
+	printf("%lu", j);
+	for (i = 1; i < 91; i++)
 	{
-		next = num1 + num2;
-		if (i < 98)
-		{
-			printf("%lu, ", next);
-		}
-		else if (i == 98)
-		{
-			printf("%lu\n", next);
-		}
-		num1 = num2;
-		num2 = next;
-		next = num1 + num2;
+		printf(", %lu", k);
+		k = k + j;
+		j = k - j;
 	}
+	j1 = j / 1000000000;
+	k1 = k / 1000000000;
+	j2 = j % 1000000000;
+	k2 = k % 1000000000;
+	for (i = 92; i < 99; ++i)
+	{
+		printf(", %lu%lu", k1, k2);
+		k1 = k1 + j1;
+		j1 = k1 - j1;
+		k2 = k2 + j2;
+		j2 = k2 - j2;
+	}
+	printf("\n");
 	return (0);
-
 }

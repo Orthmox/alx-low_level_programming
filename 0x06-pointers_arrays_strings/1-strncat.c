@@ -1,7 +1,8 @@
 /**
- * _strcat - appends one string to another
+ * _strncat - appends one string to another
  * @dest: is the destination string
  * @src: is the string to be copied
+ * @n: is the number of characters
  * Return: a string this time
  */
 char *_strncat(char *dest, char *src, int n)

@@ -14,12 +14,9 @@ char *_strchr(char *s, char c)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
-		{
-			lfo = (s + i);
-			break;
-		}
+			lfo = (s + i -1);
 		if (s[i] != c)
-			i++;
+			continue;
 		if (s[i] == '\0')
 			lfo = error;
 	}

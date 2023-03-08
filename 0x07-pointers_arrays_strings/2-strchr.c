@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - locates a character in a string
  * @s: is the string
@@ -7,18 +8,13 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i;
-	char *lfo;
-	char *error = "NULL";
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s != '\0')
 	{
-		if (s[i] == c)
-			lfo = (s + i -1);
-		if (s[i] != c)
-			continue;
-		if (s[i] == '\0')
-			lfo = error;
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
 	}
-	return (lfo);
+	return (NULL);
 }

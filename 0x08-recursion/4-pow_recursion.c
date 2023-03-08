@@ -2,7 +2,7 @@
 /**
  * _pow_recursion - calculates the value of a number raised to another number
  * @x: is the base
- * @u: is the exponent
+ * @y: is the exponent
  * Return: result of computation
  */
 int _pow_recursion(int x, int y)

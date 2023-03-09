@@ -1,5 +1,3 @@
-Blame
-28 lines (25 loc) · 401 Bytes
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -18,7 +16,7 @@ int main(void)
 	password = 2772;
 	contador = 0;
 
-	while (checksum > 122)
+	while (password > 122)
 	{
 		aleatorio = (rand() % 100);
 		printf("%c", aleatorio);

@@ -42,5 +42,6 @@ int palichk(char *s, int l)
 int is_palindrome(char *s)
 {
 	int l = _strlen(s);
+
 	return (palichk(s, l));
 }

@@ -8,16 +8,13 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i = 1, mul;
 
-	if (argc > 1)
+	if (argc > 2)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			sum = atoi(argv[i]) * atoi(argv[i + 1]);
-			printf("%d\n", sum);
-			return (0);
-		}
+		mul = atoi(argv[i]) * atoi(argv[i + 1]);
+		printf("%d\n", mul);
+		return (0);
 	}
 	else
 		printf("Error\n");

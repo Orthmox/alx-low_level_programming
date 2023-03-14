@@ -28,8 +28,10 @@ char *_strdup(char *str)
 	int len = _strlen(str);
 	char *new;
 
-	new = malloc(sizeof(char) * (len + 1));
 	if (*str == 0)
+		return (NULL);
+	new = malloc(sizeof(char) * (len + 1));
+	if (*str == '\0')
 		return (NULL);
 	i = 0;
 	while (i < len)

@@ -18,7 +18,7 @@ int _strlen(char *s)
 }
 
 /**
- * _strup - stores a copy of a string in memory
+ * _strdup - stores a copy of a string in memory
  * @str: is the string
  * Return: a string else NULL if empty
  */
@@ -28,9 +28,9 @@ char *_strdup(char *str)
 	int len = _strlen(str);
 	char *new;
 
-	if (str == 0)
+	new = malloc(sizeof(char) * (len + 1));
+	if (*str == 0)
 		return (NULL);
-	new = malloc(sizeof(char) * len);
 	i = 0;
 	while (i < len)
 	{

@@ -25,20 +25,24 @@ int _strlen(char *s)
 char *_strdup(char *str)
 {
 	int i;
-	int len = _strlen(str);
+	int len;
 	char *new;
 
-	if (*str == 0)
+	if (str == NULL)
+		return (NULL);
+
+	len = _strlen(str);
+	if (len == 0)
 		return (NULL);
 	new = malloc(sizeof(char) * (len + 1));
-	if (*str == '\0')
-		return (NULL);
-	i = 0;
-	while (i < len)
+	if (str)
 	{
-		new[i] = str[i];
-		i++;
+		for (i = 0; i < len; i++)
+		{
+			new[i] = str[i];
+		}
+		new[len] = '\0';
+		return (new);
 	}
-	new[i] = '\0';
-	return (new);
+	return (NULL);
 }

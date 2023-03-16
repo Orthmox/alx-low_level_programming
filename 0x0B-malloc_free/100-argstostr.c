@@ -7,14 +7,14 @@
  */
 int _strlen(char *s)
 {
-        int i = 0;
+	int i = 0;
 
-        while (*s != '\0')
-        {
-                i++;
-                s++;
-        }
-        return (i);
+	while (*s != '\0')
+	{
+		i++;
+		s++;
+	}
+	return (i);
 }
 
 /**
@@ -37,7 +37,7 @@ char *argstostr(int ac, char **av)
 	{
 		len += _strlen(av[i]) + 1;
 	}
-	cats = (char *)malloc(sizeof(char) * len + 1);
+	cats = (char *)malloc(sizeof(char) * len);
 
 	if (cats == NULL)
 	{

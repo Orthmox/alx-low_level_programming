@@ -25,7 +25,8 @@ int _strlen(char *s)
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j, k, len;
+	int i, j, k;
+	int len = 0;
 	char *cats;
 
 	if (ac == 0 || av == NULL)

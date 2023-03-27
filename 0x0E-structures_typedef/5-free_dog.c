@@ -9,6 +9,8 @@ void free_dog(dog_t *d)
 {
 	dog_t *freed;
 
+	if (d == NULL)
+		return;
 	if (d)
 	{
 		freed = d;

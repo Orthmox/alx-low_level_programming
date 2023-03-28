@@ -12,6 +12,8 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	unsigned int i;
 	void (*eap)(int);
 
+	if (action == NULL)
+		return;
 	if (action)
 		eap = action;
 

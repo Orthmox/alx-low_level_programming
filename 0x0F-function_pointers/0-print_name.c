@@ -8,6 +8,10 @@
 void print_name(char *name, void (*f)(char *))
 {
 	void (*gnap)(char *);
-	gnap = f;
-	gnap(name);
+
+	if (f)
+	{
+		gnap = f;
+		gnap(name);
+	}
 }

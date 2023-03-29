@@ -4,13 +4,14 @@
  * @array: is the array
  * @size: is the size of the array
  * @cmp: is a pointer to the comparison function
+ * Return: index of first occurence
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 	int (*sean)(int);
 
-	if(cmp == NULL)
+	if (cmp == NULL)
 		return (-1);
 	if (cmp)
 		sean = cmp;

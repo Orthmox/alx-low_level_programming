@@ -1,22 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * oprint - prints opcodes of main
- * @p: is a pointer to a byte
- * @numb: is the number of bytes
- * Return: nothing
- */
-void oprint(unsigned char *p, int numb)
-{
-	int i;
-
-	for (i = 0; i < numb; i++)
-	{
-		printf("%02x ", *(p + i));
-	}
-	printf("\n");
-}
-/**
  * main - is the entry point
  * @argc: is the argument counter
  * @argv: is the argument vector
@@ -24,9 +8,9 @@ void oprint(unsigned char *p, int numb)
  */
 int main(int argc, char *argv[])
 {
-	int byte;
-	unsigned char *start;
-	unsigned char *stop;
+	int i, byte;
+	unsigned char op;
+	int (*fn)(int, char **) = main;
 
 	if (argc != 2)
 	{
@@ -35,10 +19,26 @@ int main(int argc, char *argv[])
 	}
 
 	byte = atoi(argv[1]);
-	start = (unsigned char *)main;
-	stop = (unsigned char *)(main + byte);
 
-	oprint(start, (stop - start));
+	if (byte < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	for (i = 0; i < byte; i++)
+	{
+		op = *(unsigned char *)fn;
+		printf("%02x", op);
+
+		if (i == byte - 1)
+			continue;
+		printf(" ");
+
+		fn++;
+	}
+
+	printf("\n");
 
 	return (0);
 }

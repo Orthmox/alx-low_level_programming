@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
  * print_numbers - prints numbers
- * @seperator: is the string between numbers
+ * @separator: is the string between numbers
  * @n: is the number of numbers to print
  * Return: nothing
  */
@@ -12,9 +13,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list new;
 	unsigned int i;
 
+	if (separator == NULL)
+		exit(1);
 	if (separator != NULL)
 	{
-		va_start (new, n);
+		va_start(new, n);
 
 		for (i = 0; i < n; i++)
 		{
@@ -25,5 +28,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		printf("\n");
 	}
-	va_end (new);
+	va_end(new);
 }
